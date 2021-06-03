@@ -34,7 +34,7 @@ if (candidateAnswer === correctAnswer) {
   console.log(candidateAnswer + " is NOT the correct answer.")
 }
 
-  let grade;
+  let grade = "";
   
 
   return grade;
