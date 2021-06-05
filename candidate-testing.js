@@ -57,13 +57,13 @@ function gradeQuiz(candidateAnswers) {
     }
   }
 
-let percentage = (numOfCorrectAnswers / numOfQuestions) * 100;
-let grade = "";
+let grade = (numOfCorrectAnswers / numOfQuestions) * 100;;
+let status = "";
 
-if (percentage < 80) {
-  grade = "FAILED";
+if (grade < 80) {
+  status = "FAILED";
 } else {
-  grade = "PASSED";
+  status = "PASSED";
 }
 
   console.log(`Candidate Name: ${candidateName}
@@ -87,8 +87,8 @@ Correct Answer: ${correctAnswers[3]}
 Your Answer: ${candidateAnswers[4]}
 Correct Answer: ${correctAnswers[4]}
 
->>> Overall Grade: ${percentage}% (${numOfCorrectAnswers} of 5 responses correct) <<<
->>> Status: ${grade} <<<`);
+>>> Overall Grade: ${grade}% (${numOfCorrectAnswers} of 5 responses correct) <<<
+>>> Status: ${status} <<<`);
 
   
 
